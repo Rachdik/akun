@@ -1,1 +1,257 @@
+
 proxies:
+  - name: Google LLC (ID)
+    server: 104.22.5.240
+    port: 443
+    type: vless
+    uuid: b2ebebe2-089d-48e2-b3e6-40a5a452f59f
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: servpn.us.kg
+    network: ws
+    ws-opts:
+      path: /id2
+      headers:
+        Host: servpn.us.kg
+    udp: true
+  - name: Aryaka Networks, Inc. (SG)
+    server: 104.22.5.240
+    port: 443
+    type: vless
+    uuid: 79ac88c8-fd46-4e68-9753-70553ae9f40d
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: servpn.us.kg
+    network: ws
+    ws-opts:
+      path: /sg1
+      headers:
+        Host: servpn.us.kg
+    udp: true
+  - name: DigitalOcean, LLC (SG)
+    server: 104.22.5.240
+    port: 443
+    type: vless
+    uuid: c374dc53-c533-47d7-9665-8b5953192334
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: servpn.us.kg
+    network: ws
+    ws-opts:
+      path: /sg2
+      headers:
+        Host: servpn.us.kg
+    udp: true
+  - name: Amazon.com, Inc. (SG)
+    server: 104.22.5.240
+    port: 443
+    type: vless
+    uuid: 47a132d0-094e-4909-897a-959d239b7754
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: servpn.us.kg
+    network: ws
+    ws-opts:
+      path: /sg3
+      headers:
+        Host: servpn.us.kg
+    udp: true
+  - name: First Server Limited (SG)
+    server: 104.22.5.240
+    port: 443
+    type: vless
+    uuid: c306937f-6c6c-46e5-b4ab-9c911e06f997
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: servpn.us.kg
+    network: ws
+    ws-opts:
+      path: /sg4
+      headers:
+        Host: servpn.us.kg
+    udp: true
+  - name: Oracle Corporation (SG)
+    server: 104.22.5.240
+    port: 443
+    type: vless
+    uuid: 01bc9ab0-0833-449d-83f8-a761fca1e158
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: servpn.us.kg
+    network: ws
+    ws-opts:
+      path: /sg7
+      headers:
+        Host: servpn.us.kg
+    udp: true
+  - name: Alibaba (US) Technology Co., Ltd. (SG)
+    server: 104.22.5.240
+    port: 443
+    type: vless
+    uuid: 41cfd667-60a3-464e-a763-6c293d2c1807
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: servpn.us.kg
+    network: ws
+    ws-opts:
+      path: /sg8
+      headers:
+        Host: servpn.us.kg
+    udp: true
+  - name: ADSL Streamyx Telekom Malaysia (MY)
+    server: 104.22.5.240
+    port: 443
+    type: vless
+    uuid: eef6a091-eade-4c06-9d6d-d85cea6a1202
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: servpn.us.kg
+    network: ws
+    ws-opts:
+      path: /my1
+      headers:
+        Host: servpn.us.kg
+    udp: true
+  - name: M247 Europe SRL (JP)
+    server: 104.22.5.240
+    port: 443
+    type: vless
+    uuid: 95e5ae16-dc5d-408a-8fec-d209d926ef07
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: servpn.us.kg
+    network: ws
+    ws-opts:
+      path: /jp1
+      headers:
+        Host: servpn.us.kg
+    udp: true
+  - name: Oracle Corporation (KR)
+    server: 104.22.5.240
+    port: 443
+    type: vless
+    uuid: 28a390a8-c548-48b9-a321-d5afea4fe94b
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: servpn.us.kg
+    network: ws
+    ws-opts:
+      path: /kr1
+      headers:
+        Host: servpn.us.kg
+    udp: true
+  - name: Baxet Group Inc. (US)
+    server: 104.22.5.240
+    port: 443
+    type: vless
+    uuid: 1538fdc6-5815-4aa5-8a5c-115c50392884
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: servpn.us.kg
+    network: ws
+    ws-opts:
+      path: /us2
+      headers:
+        Host: servpn.us.kg
+    udp: true
+  - name: Shenzhen Tencent Computer Systems Company Limited (US)
+    server: 104.22.5.240
+    port: 443
+    type: vless
+    uuid: 211a14c3-1a69-4752-9318-17cd8e88d2a4
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: servpn.us.kg
+    network: ws
+    ws-opts:
+      path: /us3
+      headers:
+        Host: servpn.us.kg
+    udp: true
+proxy-groups:
+  - name: FASTSSH-SSHKIT-HOWDY
+    type: select
+    proxies:
+      - Google LLC (ID)
+      - Aryaka Networks, Inc. (SG)
+      - DigitalOcean, LLC (SG)
+      - Amazon.com, Inc. (SG)
+      - First Server Limited (SG)
+      - Oracle Corporation (SG)
+      - Alibaba (US) Technology Co., Ltd. (SG)
+      - ADSL Streamyx Telekom Malaysia (MY)
+      - M247 Europe SRL (JP)
+      - Oracle Corporation (KR)
+      - Baxet Group Inc. (US)
+      - Shenzhen Tencent Computer Systems Company Limited (US)
+      - LOAD-BALANCE
+      - BEST-PING
+      - FALLBACK
+      - DIRECT
+  - name: LOAD-BALANCE
+    type: load-balance
+    strategy: consistent-hashing
+    url: http://hi.bonds.id/ping
+    interval: 300
+    proxies:
+      - Google LLC (ID)
+      - Aryaka Networks, Inc. (SG)
+      - DigitalOcean, LLC (SG)
+      - Amazon.com, Inc. (SG)
+      - First Server Limited (SG)
+      - Oracle Corporation (SG)
+      - Alibaba (US) Technology Co., Ltd. (SG)
+      - ADSL Streamyx Telekom Malaysia (MY)
+      - M247 Europe SRL (JP)
+      - Oracle Corporation (KR)
+      - Baxet Group Inc. (US)
+      - Shenzhen Tencent Computer Systems Company Limited (US)
+  - name: BEST-PING
+    type: url-test
+    url: http://hi.bonds.id/ping
+    interval: 300
+    tolerance: 50
+    proxies:
+      - Google LLC (ID)
+      - Aryaka Networks, Inc. (SG)
+      - DigitalOcean, LLC (SG)
+      - Amazon.com, Inc. (SG)
+      - First Server Limited (SG)
+      - Oracle Corporation (SG)
+      - Alibaba (US) Technology Co., Ltd. (SG)
+      - ADSL Streamyx Telekom Malaysia (MY)
+      - M247 Europe SRL (JP)
+      - Oracle Corporation (KR)
+      - Baxet Group Inc. (US)
+      - Shenzhen Tencent Computer Systems Company Limited (US)
+  - name: FALLBACK
+    type: fallback
+    url: http://hi.bonds.id/ping
+    interval: 300
+    proxies:
+      - Google LLC (ID)
+      - Aryaka Networks, Inc. (SG)
+      - DigitalOcean, LLC (SG)
+      - Amazon.com, Inc. (SG)
+      - First Server Limited (SG)
+      - Oracle Corporation (SG)
+      - Alibaba (US) Technology Co., Ltd. (SG)
+      - ADSL Streamyx Telekom Malaysia (MY)
+      - M247 Europe SRL (JP)
+      - Oracle Corporation (KR)
+      - Baxet Group Inc. (US)
+      - Shenzhen Tencent Computer Systems Company Limited (US)
+rules:
+  - MATCH,FASTSSH-SSHKIT-HOWDY
